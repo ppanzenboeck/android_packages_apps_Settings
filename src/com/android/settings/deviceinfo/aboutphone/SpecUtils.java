@@ -25,8 +25,10 @@ import android.os.Environment;
 import android.os.StatFs;
 import android.view.Display;
 import android.view.WindowManager;
+import android.view.WindowMetrics;
 import android.util.DisplayMetrics;
 import android.graphics.Point;
+import android.graphics.Rect;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.BatteryManager;
@@ -41,7 +43,7 @@ import com.android.settings.R;
 public class SpecUtils {
 
     private static final long BYTES_PER_GB = 1024 * 1024 * 1024; // 1GB in bytes
-    private static final int[] KNOWN_RAM_SIZES = {1, 2, 3, 4, 6, 8, 10, 12, 16, 32, 48, 64}; // Known RAM sizes in GB
+    private static final int[] KNOWN_RAM_SIZES = {1, 2, 3, 4, 6, 8, 10, 12, 16, 32, 48, 64, 128, 256, 512}; // Known RAM sizes in GB
     private static int sBatteryDivider = 1000; // Default divider, will be initialized from config
 
     private static void initializeBatteryDivider(Context context) {
@@ -67,27 +69,33 @@ public class SpecUtils {
         return KNOWN_RAM_SIZES[KNOWN_RAM_SIZES.length - 1];
     }
 
-    public static String getTotalInternalMemorySize() {
+    public static String getTotalInternalMemorySizeWithUnit() {
         File path = Environment.getDataDirectory();
         StatFs stat = new StatFs(path.getPath());
         long blockSize = stat.getBlockSizeLong();
         long totalBlocks = stat.getBlockCountLong();
         double total = (totalBlocks * blockSize) / 1073741824;
         int lastval = (int) Math.round(total);
-        if (lastval > 0  && lastval <= 16)
-            return "16";
+        String gbRom = " GB ROM";
+        String tbRom = " TB ROM";
+        if (lastval > 0  && lastval <= 8)
+            return "8" + gbRom;
+        else if (lastval > 8  && lastval <= 16)
+            return "16" + gbRom;
         else if (lastval > 16 && lastval <=32)
-            return "32";
+            return "32" + gbRom;
         else if (lastval > 32 && lastval <=64)
-            return "64";
+            return "64" + gbRom;
         else if (lastval > 64 && lastval <=128)
-            return "128";
+            return "128" + gbRom;
         else if (lastval > 128 && lastval <= 256)
-            return "256";
+            return "256" + gbRom;
         else if (lastval > 256 && lastval <= 512)
-            return "512";
-        else if (lastval > 512)
-            return "512+";
+            return "512" + gbRom;
+        else if (lastval > 512 && lastval <= 1024)
+            return "1" + tbRom;
+        else if (lastval > 1024)
+            return "1+" + tbRom;
         else return "null";
     }
 
@@ -108,12 +116,27 @@ public class SpecUtils {
 
     public static String getScreenRes(Context context) {
         WindowManager windowManager = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
-        Display display = windowManager.getDefaultDisplay();
-        Point size = new Point();
-        display.getSize(size);
-        int screenWidth = size.x;
-        int screenHeight = size.y + getNavigationBarHeight(windowManager);
-        return screenWidth + " x " + screenHeight;
+        int width, height;
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            // Modern approach (Android 11 / API 30+)
+            // Returns the real display bounds in the current rotation state
+            WindowMetrics metrics = windowManager.getMaximumWindowMetrics();
+            Rect bounds = metrics.getBounds();
+            width = bounds.width();
+            height = bounds.height();
+        } else {
+            // Fallback for older Android versions
+            Display display = windowManager.getDefaultDisplay();
+            Point size = new Point();
+            display.getRealSize(size);
+            width = size.x;
+            height = size.y;
+        }
+
+        // Directly return the raw dimensions
+        // In Portrait, width < height. In Landscape, width > height.
+        return width + " x " + height;
     }
 
     private static int getNavigationBarHeight(WindowManager wm) {
