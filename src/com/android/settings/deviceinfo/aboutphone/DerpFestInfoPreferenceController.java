@@ -74,7 +74,7 @@ public class DerpFestInfoPreferenceController extends AbstractPreferenceControll
             device.setOnClickListener(v -> showDeviceNameDialog());
         }
         
-        storage.setText(String.valueOf(SpecUtils.getTotalInternalMemorySize()) + "GB ROM + " + String.valueOf(SpecUtils.getTotalRAM()) + "GB RAM");
+        storage.setText(String.valueOf(SpecUtils.getTotalInternalMemorySizeWithUnit()) + " + " + String.valueOf(SpecUtils.getTotalRAM()) + "GB RAM");
         battery.setText(SpecUtils.getBatteryCapacity(mContext) + " mAh");
         infoScreen.setText(SpecUtils.getScreenRes(mContext));
     }
