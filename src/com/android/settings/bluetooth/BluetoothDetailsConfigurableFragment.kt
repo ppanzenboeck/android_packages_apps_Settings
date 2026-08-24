@@ -211,7 +211,13 @@ abstract class BluetoothDetailsConfigurableFragment :
                 }
             }
         }
-        constructLayout(pageLayout)
+        val melodyNode =
+            DeviceSettingConfigNodeModel.Item.BuiltinItem.CommonBuiltinItem(
+                0,
+                false,
+                BluetoothDetailsMelodyController.KEY_MELODY_DEVICE_CONTROLS,
+            )
+        constructLayout(DeviceSettingLayout(pageLayout.nodes + melodyNode))
     }
 
     private fun listenToAppProvidedSettingChanges(
