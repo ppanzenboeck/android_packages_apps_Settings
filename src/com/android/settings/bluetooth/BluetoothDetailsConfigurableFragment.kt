@@ -211,7 +211,24 @@ abstract class BluetoothDetailsConfigurableFragment :
                 }
             }
         }
-        constructLayout(pageLayout)
+        val melodyKey = BluetoothDetailsMelodyController.KEY_MELODY_DEVICE_CONTROLS
+        var hasMelody = false
+        pageLayout.traverse { _, item ->
+            if (item is DeviceSettingConfigNodeModel.Item.BuiltinItem && item.preferenceKey == melodyKey) {
+                hasMelody = true
+            }
+        }
+        val finalLayout = if (!hasMelody) {
+            val melodyItem = DeviceSettingConfigNodeModel.Item.BuiltinItem.CommonBuiltinItem(
+                999,
+                false,
+                melodyKey,
+            )
+            DeviceSettingLayout(pageLayout.nodes + melodyItem)
+        } else {
+            pageLayout
+        }
+        constructLayout(finalLayout)
     }
 
     private fun listenToAppProvidedSettingChanges(
