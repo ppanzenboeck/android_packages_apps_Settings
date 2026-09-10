@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: DerpFest AOSP
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- DerpFest -->
+    <string name="derpfest_title" translatable="false">DerpFest</string>
+    <string name="about_device_name">Устройство</string>
+
+    <!-- About phone screen, DerpFest version -->
+    <string name="derpfest_version">Версия DerpFest</string>
+    <string name="derpfest_version_default">Неизвестно</string>
+
+    <!-- Hardware info -->
+    <string name="soc_model">Модель SoC</string>
+    <string name="total_ram">Всего ОЗУ</string>
+
+    <!-- Notification log -->
+    <string name="notification_log_summary">Показать журнал истории уведомлений</string>
+
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+
+    <!-- Default getTimeSpentInApp string for Wellbeing to display. [CHAR LIMIT=NONE] --> 
+     <string name="duration_less_than_one_minute">Меньше 1 минуты</string> 
+ 
+     <!-- Summary for Wellbeing screen time usage. [CHAR LIMIT=NONE] -->
+     <string name="screen_time_summary_usage_today">%1$s сегодня</string>
+
+    <!-- Clipboard -->
+    <string name="copied_to_clipboard">Скопировано в буфер обмена</string>
+    <string name="longpress_to_clipboard">Нажмите и удерживайте, чтобы скопировать</string>
+
+    <!-- Ambient wake -->
+    <string name="doze_gesture_ambient_title">Показать Ambient</string>
+    <string name="doze_gesture_ambient_summary">Показывать Ambient Display вместо полного пробуждения экрана</string>
+    <string name="gesture_wake_ambient">Показать Ambient</string>
+    <string name="gesture_wake">Полностью пробудить</string>
+
+    <!-- Pulse on music track change -->
+    <string name="pulse_on_new_tracks_title">Музыкальная бегущая строка</string>
+    <string name="pulse_on_new_tracks_summary">Показывать Ambient Display при воспроизведении новой музыкальной композиции</string>
+
+    <!-- Game Space -->
+    <string name="game_space_title">Игровое пространство</string>
+    <string name="game_space_summary">Улучшите свой игровой опыт</string>
+
+    <!-- Annoying Notifications -->
+    <string name="notification_sound_vib_screen_on_title">Надоедливые уведомления</string>
+    <string name="notification_sound_vib_screen_on_summary">Воспроизводить звук и вибрацию для уведомлений, когда экран включен</string>
+
+    <!-- Heads up notifications -->
+    <string name="heads_up_notifications_title">Всплывающие уведомления</string>
+    <string name="heads_up_blacklist_title">Чёрный список всплывающих уведомлений</string>
+
+    <!-- If blurs are supported on SurfaceFlinger. [CHAR LIMIT=60] -->
+    <string name="enable_blurs_on_windows_title">Включить размытие</string>
+    <string name="enable_blurs_on_windows_summary">Включает эффект размытия в некоторых элементах интерфейса</string>
+
+    <!-- Label for a numbered SIM card.  [CHAR LIMIT=40] -->
+    <string name="sim_card_number_title" translatable="false">SIM <xliff:g id="card_number">%1$d</xliff:g></string>
+
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Свайп для скриншота</string>
+    <string name="swipe_to_screenshot_gesture_summary">Проведите тремя пальцами, чтобы сделать скриншот</string>
+
+    <!-- Smart Pause -->
+    <string name="adaptive_playback_screen_title">Умная пауза</string>
+    <string name="adaptive_playback_enabled">Использовать умную паузу</string>
+    <string name="adaptive_playback_disabled_summary">Выключено</string>
+    <string name="adaptive_playback_intro_text">Автоматически приостанавливает воспроизведение медиа, когда звук выключен, и автоматически возобновляет воспроизведение, если звук будет восстановлен в течение установленного времени.</string>
+    <string name="adaptive_playback_timeout_title">Использовать таймаут</string>
+    <string name="adaptive_playback_timeout_none">Без таймаута</string>
+    <string name="adaptive_playback_timeout_none_summary">Включено (без таймаута)</string>
+    <string name="adaptive_playback_timeout_30_secs">30 секунд</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Включено (30 секунд)</string>
+    <string name="adaptive_playback_timeout_1_min">1 минута</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Включено (1 минута)</string>
+    <string name="adaptive_playback_timeout_2_min">2 минуты</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Включено (2 минуты)</string>
+    <string name="adaptive_playback_timeout_5_min">5 минут</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Включено (5 минут)</string>
+    <string name="adaptive_playback_timeout_10_min">10 минут</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Включено (10 минут)</string>
+
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">Параметры вибрации во время звонка</string>
+    <string name="incall_vibrate_connect_title">Вибрация при подключении</string>
+    <string name="incall_vibrate_call_wait_title">Вибрация в режиме ожидания звонка</string>
+    <string name="incall_vibrate_disconnect_title">Вибрация при отключении</string>
+
+    <!-- Cycle through ringer modes gesture -->
+    <string name="prevent_ringing_option_cycle">Переключение режимов</string>
+    <string name="prevent_ringing_option_cycle_summary">Включено (переключение режимов)</string>
+    <string name="prevent_ringing_option_normal">Обычный</string>
+
+    <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Полноэкранные приложения</string>
+    <string name="display_cutout_force_fullscreen_summary">Заставить приложения игнорировать область выреза</string>
+    <string name="app_list_search">Поиск</string>
+    <string name="app_list_search_apps">Поиск приложений</string>
+    <string name="app_list_loading">Загрузка приложений\u2026</string>
+
+    <!-- Timeout entries -->
+    <string name="timeout_summary_never">Никогда</string>
+    <string name="timeout_summary_15secs">15 секунд</string>
+    <string name="timeout_summary_30secs">30 секунд</string>
+    <string name="timeout_summary_1min">1 минута</string>
+    <string name="timeout_summary_2mins">2 минуты</string>
+    <string name="timeout_summary_5mins">5 минут</string>
+    <string name="timeout_summary_10mins">10 минут</string>
+    <string name="timeout_summary_30mins">30 минут</string>
+    <string name="timeout_summary_1hour">1 час</string>
+    <string name="timeout_summary_2hours">2 часа</string>
+    <string name="timeout_summary_4hours">4 часа</string>
+    <string name="timeout_summary_8hours">8 часов</string>
+    <string name="timeout_summary_12hours">12 часов</string>
+    <string name="timeout_summary_24hours">24 часа</string>
+    <string name="timeout_summary_36hours">36 часов</string>
+    <string name="timeout_summary_48hours">48 часов</string>
+    <string name="timeout_summary_72hours">72 часа</string>
+
+    <!-- Network preferences screen, setting option name to change wifi timeout -->
+    <string name="wifi_timeout">Автоматически выключать Wi‑Fi</string>
+
+    <!-- Network preferences screen, setting option summary to change wifi timeout -->
+    <string name="wifi_timeout_summary">Wi‑Fi выключится через <xliff:g id="timeout_description">%1$s</xliff:g>, если не будет подключена сеть</string>
+    <string name="wifi_timeout_summary2">Выключено</string>
+
+    <!-- Connected devices screen, setting option name to change bluetooth timeout -->
+    <string name="bluetooth_timeout">Таймаут Bluetooth</string>
+    <!-- Connected devices screen, setting option summary to change bluetooth timeout -->
+    <string name="bluetooth_timeout_summary">Bluetooth выключится через <xliff:g id="timeout_description">%1$s</xliff:g>, если не будет подключено устройств</string>
+    <string name="bluetooth_timeout_summary2">Не выключать Bluetooth автоматически</string>
+
+    <!-- Navigation Bar -->
+    <string name="navigation_bar_enable_taskbar_title">Включить панель задач</string>
+
+    <!-- Ver cool DerpFest Branding -->
+    <string name="very_cool_branding">h.</string>
+    <string name="very_cool_version">Ursinia</string>
+
+    <!-- About Phone -->
+    <string name="keywords_top_level_device_info">о телефоне, derpfest, название устройства</string>
+    <string name="more_device_info">Подробнее</string>
+    <string name="more_device_info_summary">Показать больше информации об устройстве</string>
+
+    <!-- About Phone Header -->
+    <string name="derpfest_device_title">Устройство</string>
+    <string name="derpfest_memory_storage_title">Память</string>
+    <string name="derpfest_battery_size_title">Ёмкость аккумулятора</string>
+    <string name="derpfest_screen_res_title">Разрешение экрана</string>
+
+    <!-- My Device - Phone Number Category -->
+    <string name="sim_num_info_cat">Номер телефона</string>
+
+    <!-- Per-app volume -->
+    <string name="app_volume">Громкость приложения</string>
+    <string name="app_volume_title">Регулировка громкости для каждого приложения</string>
+    <string name="app_volume_summary">Показать кнопку громкости для каждого приложения в диалоговом окне громкости</string>
+
+    <!-- WiFi Hotspot -->
+    <string name="wifi_hotspot_ap_band_title">Диапазон точки доступа</string>
+    <string name="wifi_hotspot_hidden_ssid_title">Скрытая сеть</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">Название вашей мобильной точки доступа не будет отображаться в списке доступных сетей WLAN.</string>
+    <string name="wifi_hotspot_client_manager_title">Подключённые устройства</string>
+    <string name="wifi_hotspot_client_manager_summary">Список и управление устройствами, подключёнными к точке доступа</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">Список устройств, подключённых к точке доступа</string>
+    <string name="wifi_hotspot_client_limit_title">Лимит подключённых устройств</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">Заблокированные устройства</string>
+    <string name="wifi_hotspot_connected_clients_list_title">Подключённые устройства</string>
+    <string name="wifi_hotspot_block_client_dialog_title">Заблокировать устройство</string>
+    <string name="wifi_hotspot_block_client_dialog_text">Это действие отключит \"<xliff:g id="device_name">%1$s</xliff:g>\" от этого устройства и добавит его в чёрный список</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Разблокировать устройство</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">Устройство \"<xliff:g id="device_name">%1$s</xliff:g>\" сможет подключиться к этой точке доступа</string>
+    <string name="wifi_hotspot_client_manager_footer_text">В данный момент нет доступных клиентов. Подключённые и заблокированные устройства будут перечислены здесь, когда станут доступны.</string>
+    <string name="wifi_band_24ghz_and_5ghz">2,4 ГГц и 5 ГГц</string>
+    <string name="wifi_band_24ghz_and_6ghz">2,4 ГГц и 6 ГГц</string>
+    <string name="wifi_band_60ghz" translatable="false">60 ГГц</string>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="one">К этой точке доступа может подключиться до <xliff:g id="device_num">%1$d</xliff:g> устройства</item>
+        <item quantity="few">К этой точке доступа могут подключиться до <xliff:g id="device_num">%1$d</xliff:g> устройств</item>
+        <item quantity="many">К этой точке доступа могут подключиться до <xliff:g id="device_num">%1$d</xliff:g> устройств</item>
+        <item quantity="other">К этой точке доступа могут подключиться до <xliff:g id="device_num">%1$d</xliff:g> устройств</item>
+    </plurals>
+
+    <!-- Custom Timeouts -->
+    <string name="custom_timeout_summary_never">Никогда</string>
+    <string name="custom_timeout_summary_5secs">5 секунд</string>
+    <string name="custom_timeout_summary_10secs">10 секунд</string>
+    <string name="custom_timeout_summary_15secs">15 секунд</string>
+    <string name="custom_timeout_summary_30secs">30 секунд</string>
+    <string name="custom_timeout_summary_1min">1 минута</string>
+    <string name="custom_timeout_summary_2mins">2 минуты</string>
+    <string name="custom_timeout_summary_5mins">5 минут</string>
+    <string name="custom_timeout_summary_10mins">10 минут</string>
+    <string name="custom_timeout_summary_20mins">20 минут</string>
+    <string name="custom_timeout_summary_30mins">30 минут</string>
+    <string name="custom_timeout_summary_1hour">1 час</string>
+    <string name="custom_timeout_summary_2hours">2 часа</string>
+    <string name="custom_timeout_summary_4hours">4 часа</string>
+    <string name="custom_timeout_summary_8hours">8 часов</string>
+    <string name="custom_timeout_summary_12hours">12 часов</string>
+    <string name="custom_timeout_summary_24hours">24 часа</string>
+    <string name="custom_timeout_summary_36hours">36 часов</string>
+    <string name="custom_timeout_summary_48hours">48 часов</string>
+    <string name="custom_timeout_summary_72hours">72 часа</string>
+
+    <!-- Default Timeouts -->
+    <string name="custom_timeout_summary_1hour_def">1 час (по умолчанию)</string>
+
+	<!-- Doze on charge -->
+    <string name="doze_on_charge_title">Всегда показывать при зарядке</string>
+    <string name="doze_on_charge_summary">Всегда показывать время и информацию при зарядке</string>
+
+    <!-- DerpFest Customizations on homepage -->
+    <string name="derpfest_customizations_title">Настройки DerpFest</string>
+    <string name="derpfest_customizations_summary">Где находятся сломанные функции</string>
+    <string name="menu_key_derpfest">top_level_derpfest_customizations</string>
+
+    <!-- DerpFest maintainer -->
+    <string name="derpfest_summary">Собрано %s</string>
+    <string name="derpfest_maintainer">Неофициальный мейнтейнер</string>
+
+    <!-- DerpFest official banner -->
+    <string name="derp_official_title">Вы знали?</string>
+    <string name="derp_official_summary">Вы используете официальную сборку DerpFest.</string>
+
+    <!-- SELinux Status -->
+    <string name="selinux_status">Статус SELinux</string>
+    <string name="selinux_status_disabled">Отключено</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+
+    <!-- USB configuration -->
+    <string name="usb_default_config_title">Конфигурация USB</string>
+    <string name="usb_default_config_summary">Выберите поведение по умолчанию при подключении к устройству через USB</string>
+
+    <!-- Radio Info -->
+    <string name="radio_info_title">Информация о радио</string>
+
+    <!-- Units -->
+    <string name="unit_milliseconds">миллисекунды</string>
+    <string name="unit_pixels">dp</string>
+    <string name="unit_hz">Гц</string>
+
+    <!-- Vibration patterns -->
+    <string name="vibration_pattern_title">Шаблон вибрации звонка</string>
+    <string name="notification_vibration_pattern_title">Шаблон вибрации уведомлений</string>
+    <string name="pattern_dzzz_dzzz">дзззз-дзззз</string>
+    <string name="pattern_dzzz_da">дзззз-дз</string>
+    <string name="pattern_mm_mm_mm">мм-мм-мм</string>
+    <string name="pattern_da_da_dzzz">дз-дз-дзззз</string>
+    <string name="pattern_da_dzzz_da">дз-дзззз-дз</string>
+    <string name="pattern_custom">Пользовательский</string>
+    <string name="custom_vibration_pattern_title">Пользовательский шаблон</string>
+    <string name="custom_vibration_pattern_summary">Установить пользовательский шаблон вибрации</string>
+
+    <!-- Per-channel vibration pattern -->
+    <string name="notification_custom_vibrate_title">Пользовательский шаблон вибрации</string>
+    <string name="notification_custom_vibrate_summary">Заменяет только шаблон по умолчанию\nШаблон, установленный приложением, имеет приоритет</string>
+    <string name="notification_custom_vibrate_slider1">Вибрация в течение</string>
+    <string name="notification_custom_vibrate_slider2">Пауза в течение</string>
+
+    <!-- Menu option for not validating the EAP server -->
+    <string name="wifi_do_not_validate_eap_server">Не проверять</string>
+    <!-- Warning message displayed if user choses not to validate the EAP server -->
+    <string name="wifi_do_not_validate_eap_server_warning">Сертификат не указан. Ваше соединение не будет приватным.</string>
+
+    <!-- Back gesture animation -->
+    <string name="navbar_gesture_handle_category">Ручка жеста</string>
+    <string name="back_gesture_arrow_title">Анимация жеста назад</string>
+    <string name="back_gesture_arrow_summary">Показать анимированную стрелку для жеста назад</string>
+
+    <!-- Haptic feedback -->
+    <string name="back_gesture_haptic_title">Тактильная обратная связь</string>
+    <string name="back_gesture_haptic_summary">Вибрация при выполнении жеста назад</string>
+
+    <!-- Misc Haptics -->
+    <string name="misc_vibration_category_title">Дополнительные параметры вибрации</string>
+
+    <!-- Haptic feedback -->
+    <string name="touch_haptic_title">Дополнительные настройки тактильной обратной связи</string>
+    <string name="touch_haptic_summary">Настроить тактильную обратную связь для системных виджетов</string>
+    <string name="haptic_on_qs_title">Плитки быстрых настроек</string>
+    <string name="haptic_on_qs_summary">Вибрация при касании быстрых плиток</string>
+    <string name="haptic_on_power_menu_title">Меню питания</string>
+    <string name="haptic_on_power_menu_summary">Обеспечить тактильную обратную связь при действиях в меню питания</string>
+
+    <!-- HDR Display -->
+    <string name="hdr_display_title">Улучшенная яркость HDR</string>
+    <string name="hdr_display_summary">Увеличивает и расширяет цветовой диапазон и чёткость изображений и видео в высоком динамическом диапазоне (HDR). Контент HDR будет выглядеть ярче. Это увеличит расход батареи</string>
+    <string name="hdr_max_brightness_percent_title">Интенсивность яркости HDR</string>
+
+    <!-- AOD Schedule -->
+    <string name="always_on_display_schedule_title">Расписание Always on display</string>
+    <string name="always_on_display_schedule_sunset">Закат</string>
+    <string name="always_on_display_schedule_sunrise">Восход</string>
+    <string name="always_on_display_schedule_mixed_sunset">Включается от заката до определённого времени</string>
+    <string name="always_on_display_schedule_mixed_sunrise">Включается от определённого времени до восхода</string>
+    <string name="disabled">Выключено</string>
+
+    <!-- Pocket mode -->
+    <string name="pocket_judge_title">Обнаружение в кармане</string>
+    <string name="pocket_judge_summary">Блокировать экран и кнопки, когда устройство находится в кармане</string>
+
+    <!-- Enforce DNS for VPN -->
+    <string name="vpn_enforce_dns_title">Отключить для VPN</string>
+    <string name="vpn_enforce_dns_summary">Отключить приватный DNS при подключении к VPN. Он восстановится после отключения.</string>
+
+    <!-- Per-app configs -->
+    <string name="per_app_config_empty_text">Ни одно из установленных приложений не поддерживает текущие настройки</string>
+
+    <!-- Per-app refresh rate -->
+    <string name="per_app_refresh_rate_title">Настройка частоты обновления для каждого приложения</string>
+    <string name="per_app_refresh_rate_summary">Настроить частоту обновления отдельно для каждого приложения</string>
+    <string name="per_app_refresh_rate_default">Следовать системным настройкам</string>
+
+    <!-- Screen refresh rate -->
+    <string name="screen_refresh_rate_title">Частота обновления экрана</string>
+    <string name="min_refresh_rate_title">Минимальная частота обновления</string>
+    <string name="max_refresh_rate_title">Максимальная частота обновления</string>
+    <string name="battery_saver_refresh_rate_title">Уменьшить частоту обновления</string>
+    <string name="battery_saver_refresh_rate_summary">Использовать частоту обновления экрана 60 Гц для экономии энергии, когда включён режим энергосбережения</string>
+    <string name="battery_saver_refresh_rate_disabled_summary">Включена экстремальная частота обновления</string>
+
+    <!-- Extreme refresh rate -->
+    <string name="extreme_refresh_rate_title">Экстремальная частота обновления</string>
+    <string name="extreme_refresh_rate_summary">Принудительно использовать максимальную частоту обновления для всех приложений</string>
+    <string name="extreme_refresh_rate_warning">Это гарантирует, что система выберет максимальную частоту обновления, игнорируя выбранные пользователем параметры и предпочтения приложений. Приложения, требующие определённой частоты обновления, могут работать некорректно.</string>
+
+    <!-- Confirm dialog -->
+    <string name="confirm_before_enable_title">Продолжить включение?</string>
+
+    <!-- IME button space -->
+    <string name="show_ime_space_title">Показать пространство для кнопок IME</string>
+    <string name="show_ime_space_summary">Включить функцию быстрого переключения метода ввода для переключения методов ввода или скрытия экранной клавиатуры с панели функций в нижней части экрана при вводе текста</string>
+
+    <!-- Running services - Background processes tab -->
+    <string name="background_processes_settings_title">Фоновые процессы</string>
+
+    <!-- Security dialog -->
+    <!-- DO NOT TRANSLATE -->
+    <string name="aosp_security_bulletin_url" translatable="false" />
+
+    <string name="security_dialog_title">Обновления безопасности</string>
+    <string name="security_dialog_neutral_button">Бюллетени безопасности AOSP</string>
+    <string name="android_security_title">Уровень патча безопасности AOSP</string>
+    <string name="android_security_summary">Обновления безопасности Android — это набор исправлений для платформы Android и бинарных файлов поставщика, которые помогают ей работать. Поскольку эти бинарные файлы являются закрытыми, мы должны полагаться на поставщиков, которые поставляют их производителям оборудования, а производители оборудования — пользователям, чтобы мы могли добавить их в наши сборки. Поскольку мы не можем контролировать этот процесс, мы хотим прояснить, что мы обновляем уровень патча безопасности только в репозиториях, которые поступают из проекта Android Open Source Project. Как правило, уровень патча безопасности поставщика будет соответствовать уровню патча последней стоковой прошивки.</string>
+    <string name="vendor_security_title">Уровень патча поставщика</string>
+
+    <!-- Transient task mode (Tadi mode) -->
+    <string name="transient_task_mode_title">Режим переходной задачи</string>
+    <string name="transient_task_mode_dialog_title">Режим переходной задачи (перезагрузите устройство, чтобы применить изменения)</string>
+    <string name="transient_task_mode_summary">Удалять приложения из недавних, когда последняя активность закрывается с помощью кнопки назад.</string>
+    <string name="transient_task_mode_default">Отключить (по умолчанию)</string>
+    <string name="transient_task_mode_allow">Включить (некоторые приложения останутся)</string>
+    <string name="transient_task_mode_force">Принудительно (переопределить поведение приложения)</string>
+
+    <!-- Reset auto brightness adjustment -->
+    <string name="reset_auto_brightness_adjustment_title">Сбросить предпочтение</string>
+    <string name="reset_auto_brightness_adjustment_summary">Позволить системе забыть ваше предпочтение яркости и сбросить его к значению по умолчанию</string>
+    <string name="reset_auto_brightness_adjustment_done">Предпочтение автоматической яркости было сброшено</string>
+
+    <!-- Data Usage Cycle -->
+    <string name="billing_cycle_type_title">Тип цикла использования мобильных данных</string>
+    <string name="billing_cycle_type_monthly">Ежемесячно</string>
+    <string name="billing_cycle_type_weekly">Еженедельно</string>
+    <string name="billing_cycle_type_daily">Ежедневно</string>
+    <string name="billing_cycle_less_than_one_hour_left">Осталось меньше 1 часа</string>
+    <string name="billing_cycle_hours_left">{count, plural,
+        =1      {Остался # час}
+        one     {Остался # час}
+        few     {Осталось # часа}
+        many    {Осталось # часов}
+        other   {Осталось # часов}
+        }</string>
+    <string name="cycle_type_weekly_title">День сброса цикла использования</string>
+    <string name="cycle_type_weekly_sub">День каждой недели:\n1 = Понедельник</string>
+    <string name="cycle_type_daily_title">Час сброса цикла использования</string>
+    <string name="cycle_type_daily_sub">Час каждого дня:</string>
+
+    <!-- wake gestures haptics -->
+    <string name="doze_gesture_vibrate_title">Тактильная обратная связь</string>
+    <string name="doze_gesture_vibrate_summary">Вибрация при вызове этого жеста</string>
+
+    <!-- Battery Saver -->
+    <string name="adaptive_battery_switch_title">Использовать адаптивную батарею</string>
+    <string name="basic_battery_saver_title">Стандартный режим энергосбережения</string>
+    <string name="basic_battery_saver_summary">Ограничивает визуальные эффекты и фоновую активность. Включает тёмную тему, если она ещё не включена.</string>
+    <string name="battery_saver_reminder_category">Напоминания</string>
+    <string name="battery_saver_reminder_switch_title">Напоминания режима энергосбережения</string>
+    <string name="battery_saver_reminder_switch_summary">Получать напоминания, когда батарея разряжена</string>
+    <string name="battery_saver_schedule_category">Расписание</string>
+    <string name="battery_saver_schedule_switch_title">Включать в зависимости от уровня батареи</string>
+    <string name="battery_saver_schedule_switch_summary">Режим энергосбережения включается, когда батарея падает до установленного уровня</string>
+    <string name="battery_schedule_title">Расписание и напоминания</string>
+    <string name="battery_schedule_summary">Управлять тем, когда включается режим энергосбережения</string>
+    <string name="extreme_battery_saver_title">Экстремальный режим энергосбережения</string>
+    <string name="extreme_battery_saver_summary">Включает все изменения, перечисленные выше. Также приостанавливает несущественные приложения и их уведомления.</string>
+    <string name="smart_battery_a11y_expand_label">Развернуть, Адаптивная батарея</string>
+    <string name="smart_battery_a11y_collapse_label">Свернуть, Адаптивная батарея</string>
+    <string name="smart_battery_title">Адаптивная батарея</string>
+    <string name="unified_battery_saver_page_intro">Экономьте энергию, чтобы батарея вашего телефона работала дольше между зарядками</string>
+
+    <!-- Hide developer status -->
+    <string name="hide_developer_status_title">Скрыть статус разработчика</string>
+    <string name="hide_developer_status_summary">Скрыть статус разработчика для выбранных приложений</string>
+
+    <!-- Ambient timeout -->
+    <string name="ambient_time_out_title">Таймаут уведомления Ambient</string>
+    <string name="ambient_time_out_summary">%1$d секунд</string>
+</resources>
+
