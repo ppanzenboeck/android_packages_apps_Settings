@@ -1828,4 +1828,16 @@
         <item>Quick settings</item>
         <item>Lockscreen</item>
     </string-array>
+
+    <string-array name="desktop_pill">
+        <item>Hidden (Transparent)</item>
+        <item>Pill (Default)</item>
+        <item>Three Dots</item>
+    </string-array>
+
+    <string-array name="desktop_pill_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
 </resources>

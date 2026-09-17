@@ -313,5 +313,14 @@
             android:key="vr_display_pref"
             android:title="@string/display_vr_pref_title"
             android:fragment="com.android.settings.display.VrDisplayPreferencePicker"/>
+
+        <ListPreference
+            android:key="desktop_mode_pill_style"
+            android:title="Desktop Mode Pill"
+            android:summary="%s"
+            android:entries="@array/desktop_pill"
+            android:entryValues="@array/desktop_pill_values"
+            android:defaultValue="1"
+            settings:controller="com.android.settings.display.DesktopPillPreferenceController"/>
     </PreferenceCategory>
 </PreferenceScreen>
