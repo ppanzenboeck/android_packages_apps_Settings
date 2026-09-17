@@ -406,6 +406,9 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
     }
 
     private boolean hasInternetPermission() {
+        if (mPackageName == null) {
+            return false;
+        }
         return mPackageManager.checkPermission(Manifest.permission.INTERNET, mPackageName)
                 == PackageManager.PERMISSION_GRANTED;
     }
